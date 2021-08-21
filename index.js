@@ -1,11 +1,19 @@
 const express = require("express");
-const app = express();
-// calling Express like a function, it generates a new application that represents a running express app.
+const mongoose = require("mongoose");
+const keys = require("./config/keys");
+require("./models/User");
+require("./services/passport");
 
-//By calling app.get creating a brand new  route handler.
-app.get("/", (req, res) => {
-  res.send({ hi: "there" });
+mongoose.connect(keys.mongoURI, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
 });
 
+const app = express();
+
+require("./routes/authRoutes")(app);
+
+//mongodb+srv://youran:<password>@feedbackcollection.zqvk9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
