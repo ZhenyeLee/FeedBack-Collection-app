@@ -15,6 +15,10 @@ module.exports = (app) => {
     res.send(req.user);
   });
 
+  // request ➡️ Cookie-session  ➡️   Passport  ➡️     deserialize    ➡️   User model instance added to
+  //             extract           Pulls user        turn user id        req object as 'req.user'
+  //           cookie data   id out of cookie data   into a user
+
   //Req represents the incoming request.
   //Res represents the outgoing response.
   app.get("/api/current_user", (req, res) => {
