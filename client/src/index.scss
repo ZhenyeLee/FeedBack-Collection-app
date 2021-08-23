@@ -1,0 +1,4 @@
+@import "materialize-css/sass/components/_color-variables";
+$primary-color: color("light-blue", "darken-1") !default;
+$secondary-color: color("yellow", "base") !default;
+@import "materialize-css/sass/materialize";
