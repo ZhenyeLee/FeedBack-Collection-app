@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "../actions";
-import image from "../images/surveybackground.png";
 
 import Header from "./Header";
 import Landing from "./Landing";
@@ -21,7 +20,6 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Header />
-            <img class="responsive-img" src={image} alt="img" />
             <Route exact path="/" component={Landing} />
             <Route exact path="/surveys" component={Dashboard} />
             <Route path="/surveys/new" component={SurveyNew} />
