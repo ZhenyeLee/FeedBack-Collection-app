@@ -6,8 +6,7 @@ import * as actions from "../actions";
 import Header from "./Header";
 import Landing from "./Landing";
 import Dashboard from "./Dashboard";
-
-const SurveyNew = () => <h2>SurveyNew</h2>;
+import SurveyNew from "./surveys/SurveyNew";
 
 class App extends Component {
   componentDidMount() {
@@ -16,7 +15,7 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container grey lighten-3">
+      <div className="container grey lighten-3">
         <BrowserRouter>
           <div>
             <Header />

@@ -12,7 +12,7 @@ class Header extends Component {
         return (
           <li>
             <a
-              class="btn waves-effect waves-light  blue darken-1"
+              className="btn waves-effect waves-light  blue darken-1"
               href="auth/google"
             >
               Login With Google
@@ -21,22 +21,20 @@ class Header extends Component {
         );
       default:
         return [
-          <React.Fragment>
-            <li key="1">
-              <Payments />
-            </li>
-            <li key="3" style={{ margin: "0 10px" }}>
-              Credits={this.props.auth.credits}
-            </li>
-            <li key="2">
-              <a
-                class="btn waves-effect waves-light  blue darken-1"
-                href="/api/logout"
-              >
-                Logout
-              </a>
-            </li>
-          </React.Fragment>,
+          <li key="1">
+            <Payments />
+          </li>,
+          <li key="3" style={{ fontSize: "18px", margin: "0 10px" }}>
+            Credits: {this.props.auth.credits}
+          </li>,
+          <li key="2">
+            <a
+              className="btn waves-effect waves-light  blue darken-1"
+              href="/api/logout"
+            >
+              Logout
+            </a>
+          </li>,
         ];
     }
   }
