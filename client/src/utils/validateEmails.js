@@ -1,18 +1,15 @@
-const re =
+const regex =
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-const validateEmails = (emails) => {
-  emails = emails.trim();
-  if (emails.length !== 0 && emails.charAt(emails.length - 1) === ",") {
-    emails = emails.substr(0, emails.length - 1);
-  }
+
+export default (emails) => {
   const invalidEmails = emails
     .split(",")
     .map((email) => email.trim())
-    .filter((email) => re.test(email) === false);
-  if (invalidEmails.length) {
-    return `These emails are invalid : ${invalidEmails}`;
-  }
-  return;
-};
+    .filter((email) => regex.test(email) === false);
 
-export default validateEmails;
+  if (invalidEmails.length) {
+    return `These emails are invalid: ${invalidEmails}`;
+  } else {
+    return;
+  }
+};

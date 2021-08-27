@@ -188,7 +188,8 @@ module.exports = (survey) => {
                                         "
                                       >
                                         <a
-                                          href="${keys.redirectDomain}/api/surveys/thanks"
+                                          href="${keys.redirectDomain}/api/surveys/${survey.id}/yes"
+
                                           target="_blank"
                                           style="
                                             display: inline-block;
@@ -209,7 +210,7 @@ module.exports = (survey) => {
                                           >Yes</a
                                         >
                                         <a
-                                          href="${keys.redirectDomain}/api/surveys/thanks"
+                                          href="${keys.redirectDomain}/api/surveys/${survey.id}/no"
                                           target="_blank"
                                           style="
                                             display: inline-block;

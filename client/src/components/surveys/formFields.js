@@ -1,4 +1,4 @@
-export default [
+const formFields = [
   {
     label: "Survey Title",
     name: "title",
@@ -20,3 +20,4 @@ export default [
     noValueError: "Please provide a Recipient",
   },
 ];
+export default formFields;

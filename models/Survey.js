@@ -14,4 +14,5 @@ const surveySchema = new Schema({
   lastResponded: Date,
 });
 
+// loads a schema called "surveys"
 mongoose.model("surveys", surveySchema);
