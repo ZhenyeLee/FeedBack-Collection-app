@@ -8,8 +8,8 @@ const surveyTemplate = require("../services/emailTemplates/surveyTemplate");
 const Survey = mongoose.model("surveys");
 
 module.exports = (app) => {
-  app.get("/api/surveys/thanks", (req, res) => {
-    res.sendFile("thanksTemplate.html", { root: __dirname });
+  app.get("/api/surveys/:surveyId/:choice", (req, res) => {
+    res.send("Thanks for voting!");
   });
 
   app.post("/api/surveys", requireLogin, requireCredits, async (req, res) => {
