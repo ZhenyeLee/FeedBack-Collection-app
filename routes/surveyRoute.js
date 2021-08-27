@@ -19,7 +19,7 @@ module.exports = (app) => {
     res.send(surveys);
   });
   app.get("/api/surveys/:surveyId/:choice", (req, res) => {
-    res.send("Thanks for voting!");
+    res.sendFile("thanksTemplate.html", { root: __dirname });
   });
 
   app.post("/api/surveys/webhooks", (req, res) => {
