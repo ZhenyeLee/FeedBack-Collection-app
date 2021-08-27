@@ -4,7 +4,7 @@ import { reduxForm, Field } from "redux-form";
 import SurveyField from "./SurveyField";
 import { Link } from "react-router-dom";
 import validateEmails from "../../utils/validateEmails";
-import formFields from "./fromFields";
+import formFields from "./formFields";
 
 class SurveyForm extends Component {
   renderFields() {
