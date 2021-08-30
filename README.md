@@ -33,12 +33,34 @@ Create and send easily surveys with yes-no questions. Be informed when a user re
 6. **Surveyees Click Links:** SendGrid + Express + MongoDB
 
 <h2 id="screenshots">Screenshots</h2>
-![Settings Window](https://github.com/ZhenyeLee/FeedBack-Collection-app/blob/master/images/ScreenShot1.png)
+
+### Index page
+<div align="center">
+    <img src="/images/ScreenShot1.png" width="800px"</img> 
+</div>
+
+### Landing page
+<div align="center">
+    <img src="/images/ScreenShot2.png" width="800px"</img> 
+</div>
+
+### New Survey
+<div align="center">
+    <img src="/images/ScreenShot3.png" width="800px"</img> 
+</div>
+
+### Review Survey
+<div align="center">
+    <img src="/images/ScreenShot4.png" width="800px"</img> 
+</div>
+
+### Email Confirmation
+<div align="center">
+    <img src="/images/ScreenShot5.png" width="800px"</img> 
+</div>
 
 
 <h2 id="todo">Todo List</h2>
-
-To-do list:
 
 -   Save draft surveys
 -   inport recipients list from json file
