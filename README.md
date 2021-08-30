@@ -33,7 +33,7 @@ Create and send easily surveys with yes-no questions. Be informed when a user re
 6. **Surveyees Click Links:** SendGrid + Express + MongoDB
 
 <h2 id="screenshots">Screenshots</h2>
-
+![Settings Window](https://github.com/ZhenyeLee/FeedBack-Collection-app/blob/master/images/ScreenShot1.png)
 
 
 <h2 id="todo">Todo List</h2>
