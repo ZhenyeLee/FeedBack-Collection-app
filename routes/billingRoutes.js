@@ -6,13 +6,13 @@ module.exports = (app) => {
   app.post("/api/stripe", requireLogin, async (req, res) => {
     //// calls requireLogin to authenticate user
     const charge = await stripe.charges.create({
-      amount: 500,
+      amount: 5000,
       currency: "usd",
-      description: "$5 for 5 credits",
+      description: "$50 for 50 credits",
       source: req.body.id,
     });
     //get user and up date user
-    req.user.credits += 5;
+    req.user.credits += 50;
     //save user
     const user = await req.user.save();
 
